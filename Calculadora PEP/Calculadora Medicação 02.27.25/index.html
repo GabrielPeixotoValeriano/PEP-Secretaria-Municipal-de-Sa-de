@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Medicamentos - E-saúde</title>
+
+    <link rel="icon" href="./Imagens/favicon.png" type="image/x-icon"> 
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style-mobile.css" media="screen and (max-width: 768px)"> 
+</head>
+<body>
+    <div class="container">
+        
+        <div class="logo-container">
+            <img src="./Imagens/smslogo.png" alt="Logo Prefeitura São Paulo" id="prefeitura-logo">
+        </div>
+
+        <div class="header">
+            <h1>Cálculo de Medicamentos</h1>
+        </div>
+
+        
+        <h2>Selecione um Medicamento</h2>
+        <select id="medication-list">
+            <option value="">Selecione um medicamento</option>
+        </select>
+
+        
+        <form id="patient-form">
+            <label for="patient-age">Idade (anos):</label>
+            <input type="number" id="patient-age" required>
+
+            <label for="patient-weight">Peso (kg):</label>
+            <input type="number" id="patient-weight" required>
+
+            <button type="submit">
+                <span class="material-icons">medication</span> Calcular Dose
+            </button>
+        </form>
+
+        <div id="dose-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
